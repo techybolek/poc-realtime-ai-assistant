@@ -1,0 +1,202 @@
+[
+    {
+        "description": "Disasters",
+        "url": "https://recovery.pr.gov/en/disaster-recovery"
+    },
+    {
+        "description": "Coronavirus (COVID-19)",
+        "url": "https://recovery.pr.gov/en/coronavirus"
+    },
+    {
+        "description": "Earthquakes",
+        "url": "https://recovery.pr.gov/en/earthquakes-response"
+    },
+    {
+        "description": "Hurricanes Irma and Maria",
+        "url": "https://recovery.pr.gov/en/hurricanes"
+    },
+    {
+        "description": "Programs",
+        "url": "https://recovery.pr.gov/en/programs"
+    },
+    {
+        "description": "FEMA Public Assistance Program",
+        "url": "https://recovery.pr.gov/en/recovery-programs/public-assistance"
+    },
+    {
+        "description": "FEMA Individual Assistance Program",
+        "url": "https://recovery.pr.gov/en/recovery-programs/individual-assistance"
+    },
+    {
+        "description": "Hazard Mitigation Grant Program",
+        "url": "https://recovery.pr.gov/en/recovery-programs/hazard-mitigation-assistance"
+    },
+    {
+        "description": "Other Recovery Funds",
+        "url": "https://recovery.pr.gov/en/recovery-programs/other-recovery-funds"
+    },
+    {
+        "description": "HUD",
+        "url": "https://recovery.pr.gov/en/recovery-programs/hud"
+    },
+    {
+        "description": "CDL",
+        "url": "https://recovery.pr.gov/en/recovery-programs/cdl"
+    },
+    {
+        "description": "Revolving Fund",
+        "url": "https://recovery.pr.gov/en/revolving-fund"
+    },
+    {
+        "description": "American Rescue Plan",
+        "url": "https://recovery.pr.gov/en/american-rescue-plan"
+    },
+    {
+        "description": "CARES Act",
+        "url": "https://recovery.pr.gov/en/cares-act"
+    },
+    {
+        "description": "Road to Recovery",
+        "url": "https://recovery.pr.gov/en/road-to-recovery"
+    },
+    {
+        "description": "Road to Recovery Project Execution",
+        "url": "https://recovery.pr.gov/en/road-to-recovery/pa-qpr/map"
+    },
+    {
+        "description": "Fiona Dashboard",
+        "url": "https://recovery.pr.gov/en/road-to-recovery/pa-qpr-fiona/map"
+    },
+    {
+        "description": "Energy, Water, Education, and Public Housing Accelerated Projects Execution",
+        "url": "https://recovery.pr.gov/en/road-to-recovery/pa-faast/map"
+    },
+    {
+        "description": "Road to Resilience - HMGP",
+        "url": "https://recovery.pr.gov/en/road-to-resilience/hmgp-qpr/map"
+    },
+    {
+        "description": "Programs",
+        "url": "https://recovery.pr.gov/en/cares-act-programs"
+    },
+    {
+        "description": "JSON SQL test",
+        "url": "https://recovery.pr.gov/en/deputy-executive-director"
+    },
+    {
+        "description": "more testing",
+        "url": "https://recovery.pr.gov//en"
+    },
+    {
+        "description": "Finances",
+        "url": "https://recovery.pr.gov/en/financial-analysis"
+    },
+    {
+        "description": "Financial Summary",
+        "url": "https://recovery.pr.gov/en/financial-analysis/financial-summary"
+    },
+    {
+        "description": "Infographic",
+        "url": "https://recovery.pr.gov/en/financial-analysis/aid-flow"
+    },
+    {
+        "description": "Table View",
+        "url": "https://recovery.pr.gov/en/financial-analysis/table-view"
+    },
+    {
+        "description": "Interactive Map",
+        "url": "https://recovery.pr.gov/en/interactive-map"
+    },
+    {
+        "description": "Data Visualization",
+        "url": "https://recovery.pr.gov/en/financial-analysis/data-visualization"
+    },
+    {
+        "description": "Disbursement Dashboard",
+        "url": "https://recovery.pr.gov/en/financial-analysis/disbursement-dashboard"
+    },
+    {
+        "description": "RFPs & Contracts",
+        "url": "https://recovery.pr.gov/en/rfp-and-contracts"
+    },
+    {
+        "description": "Documents",
+        "url": "https://recovery.pr.gov/en/document-library"
+    },
+    {
+        "description": "COR3 RFPs and Contracts",
+        "url": "https://recovery.pr.gov/en/cor3-rfps-and-contracts"
+    },
+    {
+        "description": "Subgrantee Procurement",
+        "url": "https://recovery.pr.gov/en/subgrantee-procurement"
+    },
+    {
+        "description": "All RFPs & Contracts",
+        "url": "https://recovery.pr.gov/en/cor3-rfps-and-contracts/grouped-rfps-and-contracts"
+    },
+    {
+        "description": "Active RFPs",
+        "url": "https://recovery.pr.gov/en/cor3-rfps-and-contracts/active-rfps"
+    },
+    {
+        "description": "Procurement Inventory",
+        "url": "https://recovery.pr.gov/en/subgrantee-procurement/inventory"
+    },
+    {
+        "description": "Active Requests",
+        "url": "https://recovery.pr.gov/en/subgrantee-procurement/active-requests"
+    },
+    {
+        "description": "Reconstruction Map",
+        "url": "https://recovery.pr.gov/en/subgrantee-procurement/reconstruction-map"
+    },
+    {
+        "description": "About COR3",
+        "url": "https://recovery.pr.gov/en/about-us"
+    },
+    {
+        "description": "Procurement Process",
+        "url": "https://recovery.pr.gov/en/cor3-procurement-process"
+    },
+    {
+        "description": "Procurement Process",
+        "url": "https://recovery.pr.gov/en/subgrantee-procurement-process"
+    },
+    {
+        "description": "Procurement Tools",
+        "url": "https://recovery.pr.gov/en/procurement-tools"
+    },
+    {
+        "description": "FAQs",
+        "url": "https://recovery.pr.gov/en/faq"
+    },
+    {
+        "description": "Glossary",
+        "url": "https://recovery.pr.gov/en/glossary"
+    },
+    {
+        "description": "Contact Us",
+        "url": "https://recovery.pr.gov/en/contact-us"
+    },
+    {
+        "description": "Newsroom",
+        "url": "https://recovery.pr.gov/en/newsroom"
+    },
+    {
+        "description": "Press Releases",
+        "url": "https://recovery.pr.gov/en/newsroom/press-releases"
+    },
+    {
+        "description": "Media Gallery",
+        "url": "https://recovery.pr.gov/en/newsroom/media-gallery"
+    },
+    {
+        "description": "Blogs",
+        "url": "https://recovery.pr.gov/en/newsroom/blogs"
+    },
+    {
+        "description": "Fraud, Waste and Abuse",
+        "url": "https://recovery.pr.gov/en/fraud-waste-and-abuse"
+    }
+]

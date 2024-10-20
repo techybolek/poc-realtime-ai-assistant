@@ -191,3 +191,5 @@ scratchpad/
 runtime_time_table.jsonl
 
 bup/
+*workspace
+package-lock.json
