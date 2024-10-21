@@ -9,6 +9,8 @@ from pydantic import BaseModel
 from typing import Any, Dict, Tuple, List, Optional
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
+
+from realtime_api_async_python.browser_wss import transmit_url_to_client
 from .llm import structured_output_prompt, chat_prompt
 from .memory_management import memory_manager
 from .logging import log_info
@@ -117,6 +119,15 @@ async def get_current_time():
 async def get_random_number():
     return {"random_number": random.randint(1, 100)}
 
+@timeit_decorator
+async def navigate_to_url(url: str):
+    print(f"Navigating to {url}")
+    await transmit_url_to_client(url)
+    return {"url": url}
+    
+url_function_map = {
+    "navigate_to_url": navigate_to_url
+}
 
 @timeit_decorator
 async def open_browser(prompt: str):

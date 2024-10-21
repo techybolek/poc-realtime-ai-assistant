@@ -8,25 +8,31 @@ import argparse
 from datetime import datetime
 from dotenv import load_dotenv
 from websockets.exceptions import ConnectionClosedError
+
+from realtime_api_async_python.browser_wss import init_ws_server
 from .modules.logging import log_tool_call, log_error, log_info, log_warning
 
 # Import from modules
 from .modules.async_microphone import AsyncMicrophone
 from .modules.audio import play_audio
 from .modules.tools import (
-    function_map,
-    tools,
+    url_function_map,
 )
+
+from .t2urlfu import functions
+
 from .modules.utils import (
     RUN_TIME_TABLE_LOG_JSON,
     SESSION_INSTRUCTIONS,
     PREFIX_PADDING_MS,
     SILENCE_THRESHOLD,
     SILENCE_DURATION_MS,
+    URL_SESSION_INSTRUCTIONS,
 )
 from .modules.logging import logger, log_ws_event
 import base64
 import sys
+import threading
 
 # Load environment variables
 load_dotenv()
@@ -90,7 +96,7 @@ async def realtime_api(prompts=None):
                     "type": "session.update",
                     "session": {
                         "modalities": ["text", "audio"],
-                        "instructions": SESSION_INSTRUCTIONS,
+                        "instructions": URL_SESSION_INSTRUCTIONS,
                         "voice": "alloy",
                         "input_audio_format": "pcm16",
                         "output_audio_format": "pcm16",
@@ -100,7 +106,8 @@ async def realtime_api(prompts=None):
                             "prefix_padding_ms": PREFIX_PADDING_MS,
                             "silence_duration_ms": SILENCE_DURATION_MS,
                         },
-                        "tools": tools,
+                        "tools": functions,
+                        #"functions": functions,
                     },
                 }
                 log_ws_event("Outgoing", session_update)
@@ -148,14 +155,14 @@ async def realtime_api(prompts=None):
                                         )
                                     except json.JSONDecodeError:
                                         args = None
-                                    if function_name in function_map:
+                                    if function_name in url_function_map:
                                         log_tool_call(function_name, args, None)
                                         if args:
-                                            result = await function_map[function_name](
+                                            result = await url_function_map[function_name](
                                                 **args
                                             )
                                         else:
-                                            result = await function_map[function_name]()
+                                            result = await url_function_map[function_name]()
                                         log_tool_call(function_name, args, result)
                                     else:
                                         result = {
@@ -348,8 +355,13 @@ async def realtime_api(prompts=None):
             if "websocket" in locals():
                 await websocket.close()
 
+def run_ws_server():
+    asyncio.run(init_ws_server())
 
 def main():
+    ws_thread = threading.Thread(target=run_ws_server, daemon=True)
+    ws_thread.start()
+
     print(f"Starting realtime API...")
 
     logger.info(f"Starting realtime API...")

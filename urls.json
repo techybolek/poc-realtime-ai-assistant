@@ -1,0 +1,202 @@
+[
+    {
+        "description": "Disasters",
+        "url": "/disaster-recovery"
+    },
+    {
+        "description": "Coronavirus (COVID-19)",
+        "url": "/coronavirus"
+    },
+    {
+        "description": "Earthquakes",
+        "url": "/earthquakes-response"
+    },
+    {
+        "description": "Hurricanes Irma and Maria",
+        "url": "/hurricanes"
+    },
+    {
+        "description": "Programs",
+        "url": "/programs"
+    },
+    {
+        "description": "FEMA Public Assistance Program",
+        "url": "/recovery-programs/public-assistance"
+    },
+    {
+        "description": "FEMA Individual Assistance Program",
+        "url": "/recovery-programs/individual-assistance"
+    },
+    {
+        "description": "Hazard Mitigation Grant Program",
+        "url": "/recovery-programs/hazard-mitigation-assistance"
+    },
+    {
+        "description": "Other Recovery Funds",
+        "url": "/recovery-programs/other-recovery-funds"
+    },
+    {
+        "description": "HUD",
+        "url": "/recovery-programs/hud"
+    },
+    {
+        "description": "CDL",
+        "url": "/recovery-programs/cdl"
+    },
+    {
+        "description": "Revolving Fund",
+        "url": "/revolving-fund"
+    },
+    {
+        "description": "American Rescue Plan",
+        "url": "/american-rescue-plan"
+    },
+    {
+        "description": "CARES Act",
+        "url": "/cares-act"
+    },
+    {
+        "description": "Road to Recovery",
+        "url": "/road-to-recovery"
+    },
+    {
+        "description": "Road to Recovery Project Execution",
+        "url": "/road-to-recovery/pa-qpr/map"
+    },
+    {
+        "description": "Fiona Dashboard",
+        "url": "/road-to-recovery/pa-qpr-fiona/map"
+    },
+    {
+        "description": "Energy, Water, Education, and Public Housing Accelerated Projects Execution",
+        "url": "/road-to-recovery/pa-faast/map"
+    },
+    {
+        "description": "Road to Resilience - HMGP",
+        "url": "/road-to-resilience/hmgp-qpr/map"
+    },
+    {
+        "description": "Programs",
+        "url": "/cares-act-programs"
+    },
+    {
+        "description": "JSON SQL test",
+        "url": "/deputy-executive-director"
+    },
+    {
+        "description": "more testing",
+        "url": "https://recovery.pr.gov//en"
+    },
+    {
+        "description": "Finances",
+        "url": "/financial-analysis"
+    },
+    {
+        "description": "Financial Summary",
+        "url": "/financial-analysis/financial-summary"
+    },
+    {
+        "description": "Infographic",
+        "url": "/financial-analysis/aid-flow"
+    },
+    {
+        "description": "Table View",
+        "url": "/financial-analysis/table-view"
+    },
+    {
+        "description": "Interactive Map",
+        "url": "/interactive-map"
+    },
+    {
+        "description": "Data Visualization",
+        "url": "/financial-analysis/data-visualization"
+    },
+    {
+        "description": "Disbursement Dashboard",
+        "url": "/financial-analysis/disbursement-dashboard"
+    },
+    {
+        "description": "RFPs & Contracts",
+        "url": "/rfp-and-contracts"
+    },
+    {
+        "description": "Documents",
+        "url": "/document-library"
+    },
+    {
+        "description": "COR3 RFPs and Contracts",
+        "url": "/cor3-rfps-and-contracts"
+    },
+    {
+        "description": "Subgrantee Procurement",
+        "url": "/subgrantee-procurement"
+    },
+    {
+        "description": "All RFPs & Contracts",
+        "url": "/cor3-rfps-and-contracts/grouped-rfps-and-contracts"
+    },
+    {
+        "description": "Active RFPs",
+        "url": "/cor3-rfps-and-contracts/active-rfps"
+    },
+    {
+        "description": "Procurement Inventory",
+        "url": "/subgrantee-procurement/inventory"
+    },
+    {
+        "description": "Active Requests",
+        "url": "/subgrantee-procurement/active-requests"
+    },
+    {
+        "description": "Reconstruction Map",
+        "url": "/subgrantee-procurement/reconstruction-map"
+    },
+    {
+        "description": "About COR3",
+        "url": "/about-us"
+    },
+    {
+        "description": "Procurement Process",
+        "url": "/cor3-procurement-process"
+    },
+    {
+        "description": "Procurement Process",
+        "url": "/subgrantee-procurement-process"
+    },
+    {
+        "description": "Procurement Tools",
+        "url": "/procurement-tools"
+    },
+    {
+        "description": "FAQs",
+        "url": "/faq"
+    },
+    {
+        "description": "Glossary",
+        "url": "/glossary"
+    },
+    {
+        "description": "Contact Us",
+        "url": "/contact-us"
+    },
+    {
+        "description": "Newsroom",
+        "url": "/newsroom"
+    },
+    {
+        "description": "Press Releases",
+        "url": "/newsroom/press-releases"
+    },
+    {
+        "description": "Media Gallery",
+        "url": "/newsroom/media-gallery"
+    },
+    {
+        "description": "Blogs",
+        "url": "/newsroom/blogs"
+    },
+    {
+        "description": "Fraud, Waste and Abuse",
+        "url": "/fraud-waste-and-abuse"
+    }
+]

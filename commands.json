@@ -1,0 +1,10 @@
+[
+    {
+        "description": "Scroll Up",
+        "command": "scrollUp"
+    },
+    {
+        "description": "Scroll Down",
+        "command": "scrollDown"
+    }
+]

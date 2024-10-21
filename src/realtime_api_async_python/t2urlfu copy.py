@@ -1,6 +1,7 @@
 import json
 from openai import OpenAI
-import time
+import asyncio
+import websockets
 
 def get_system_prompt():
     part1 = """
@@ -17,15 +18,9 @@ with open("urls.json", "r") as file:
 client = OpenAI()
 
 
-def call_openai(query: str) -> str:
-    completion = client.chat.completions.create(
-        model="gpt-4",
-        messages=[
-            {"role": "system", "content": get_system_prompt()},
-            {"role": "user", "content": query},
-        ],
-        functions=[
-            {
+functions = [
+    {
+                "type": "function",
                 "name": "navigate_to_url",
                 "description": "Navigate to the specified URL",
                 "parameters": {
@@ -38,18 +33,36 @@ def call_openai(query: str) -> str:
                 },
                 "required": ["url"],
             },
-            }
+    }
+]
+
+
+async def init_ws_server():
+    print("Initializing WebSocket server...")
+
+async def transmit_url_to_client(url: str):
+    print(f"Transmitting URL to client: {url}")
+
+async def call_openai(query: str) -> str:
+    # Convert the synchronous OpenAI call to asynchronous
+    loop = asyncio.get_event_loop()
+    url = await loop.run_in_executor(None, lambda: call_openai_sync(query))
+    return url
+
+def call_openai_sync(query: str) -> str:
+    # Existing call_openai function renamed to call_openai_sync
+    completion = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": get_system_prompt()},
+            {"role": "user", "content": query},
         ],
+        functions=functions
     )
 
     function_call = completion.choices[0].message.function_call
     url = json.loads(function_call.arguments)["url"]
     return url
 
-start_time = time.time()
-url = call_openai("public assistance")
-print(f"THE URL: {url}")
-url = call_openai("hmgp")
-print(f"THE URL: {url}")
-end_time = time.time()
-print(f"Time taken: {end_time - start_time} seconds")
+if __name__ == "__main__":
+    asyncio.run(init_ws_server())

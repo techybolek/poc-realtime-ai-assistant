@@ -11,6 +11,8 @@ from firecrawl import FirecrawlApp
 import tempfile
 import subprocess
 
+from realtime_api_async_python.t2urlfu import get_system_prompt
+
 RUN_TIME_TABLE_LOG_JSON = "runtime_time_table.jsonl"
 
 # Audio recording parameters
@@ -99,6 +101,7 @@ ai_assistant_name = personalization.get("ai_assistant_name", "Assistant")
 human_name = personalization.get("human_name", "User")
 
 SESSION_INSTRUCTIONS = f"You are {ai_assistant_name}, a helpful assistant. Respond concisely to {human_name}."
+URL_SESSION_INSTRUCTIONS = get_system_prompt()
 PREFIX_PADDING_MS = 300
 SILENCE_THRESHOLD = 0.5
 SILENCE_DURATION_MS = 700

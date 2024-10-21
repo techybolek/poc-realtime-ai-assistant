@@ -58,7 +58,8 @@ def log_ws_event(direction, event):
     emoji = event_emojis.get(event_type, "❓")
     icon = "⬆️ - Out" if direction == "Outgoing" else "⬇️ - In"
     style = "bold cyan" if direction == "Outgoing" else "bold green"
-    logger.info(Text(f"{emoji} {icon} {event_type}", style=style))
+    if event_type != 'input_audio_buffer.append':
+        logger.info(Text(f"{emoji} {icon} {event_type}", style=style))
 
 def log_tool_call(function_name, args, result):
     logger.info(Text(f"🛠️ Calling function: {function_name} with args: {args}", style="bold magenta"))
